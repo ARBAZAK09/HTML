@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <head>
+      <title>FORM</title>
+      <script>
+        function setFullname() {
+          var fname = document.getElementById("firstname");
+          var lname = document.getElementById("Lastname");
+          var fullNAme = document.getElementById("fullname");
+          fullNAme.value = fname.value + " " + lname.value;
+        }
+      </script>
+    </head>
+    <h1>Employee Details</h1>
+    <label>First Name</label>
+    <input type="text" id="firstname" />
+    <br />
+    <label> last Name </label>
+    <input type="text" id="Lastname" />
+    <br />
+    <button onclick="setFullname()">fullNAme</button>
+    <br />
+    <label>fullNAme</label>
+    <input type="text" id="fullname" />
+    <br />
+  </body>
+</html>

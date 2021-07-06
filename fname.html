@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Exam Form</title>
+    <script>
+      function setFullname() {
+        var fname = document.getElementById("firstname");
+        var mname = document.getElementById("middlename");
+        var lname = document.getElementById("lastname");
+        var fullname = document.getElementById("fullname");
+
+        fullname.value = fname.value + " " + mname.value + " " + lname.value;
+      }
+      function clearfullname() {
+        var clrFullName = document.getElementById("fullname");
+        clrFullName.value = " ";
+      }
+    </script>
+  </head>
+  <body>
+    <label>firstName</label>
+    <br />
+    <input type="text" id="firstname" />
+    <br />
+    <label>middlename</label>
+    <input type="text" id="middlename" />
+    <br />
+    <label>lastname</label>
+    <br />
+    <input type="text" id="lastname" />
+    <br />
+    <button onclick="setFullname()">fullname</button>
+    <br />
+    <input type="text" id="fullname" />
+    <br />
+    <button onclick="clearfullname()">clearfullname</button>
+    <br />
+  </body>
+</html>

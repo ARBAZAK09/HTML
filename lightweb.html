@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Z, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function navbar(){
+        
+        document.getElementById("nav").style=`background-color: ${sessionStorage.getItem("favouritecolor")}`;
+    }
+</script>
+
+
+
+
+
+
+
+</head>
+
+<style>
+a{
+    padding:40px;
+    color:burlywood;
+    
+}
+nav{
+    background-color:red;
+    padding: 30px;
+}
+input{
+  float:right;
+}
+</style>
+<body id="nav">
+    <nav>
+        <a href="form2.html">registration</a>
+        <a href="figure.html">Home</a>
+        <a href="image.html">product</a>
+        <a href="aboutus.html">about us</a>
+        <a href="contactus.html">contact us</a>
+        <input type="text" >
+
+    </nav>
+</body>
+<script>
+    navbar();
+</script>
+</html>

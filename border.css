@@ -1,0 +1,12 @@
+h1{
+   border: 3px dotted blueviolet;
+}
+.bdr1{
+    border: 1px solid whitesmoke;
+}
+.bdr2{
+    border:3px dashed green;
+}
+.bdr3{
+    border:4px double yellowgreen;
+}

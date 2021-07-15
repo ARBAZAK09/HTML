@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Z, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function aside(){
+        
+        document.getElementById("aside").style=`background-color: ${sessionStorage.getItem("favouritecolor")}`;
+    }
+</script>
+
+
+
+
+
+
+
+</head>
+
+<style>
+    aside{
+        padding:30px;
+        font-size: large;
+        color: white;
+        text-align: center;
+    }
+a{
+    width: 100px;
+    height: 150px;
+    background-color:blanchedalmond;
+    display: block;
+    text-decoration: none;
+}
+a:hover{
+   background-color:black;
+    border-radius: 50px;
+}
+    </style>
+    <body id="aside">
+    
+        <a href="">registration</a>
+        <a href="">Home</a>
+        <a href="">product</a>
+        <a href="">about us</a>
+        <a href="">contact us</a>
+        <input type="text" >
+
+</body>
+<script>
+    aside();
+</script>
+</html>

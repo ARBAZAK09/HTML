@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Z, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function aside(){
+        
+        document.getElementById("aside").style=`background-color: ${sessionStorage.getItem("favouritecolor")}`;
+    }
+</script>
+<style>
+    body{
+        background-image: url('./Dumbell.jpg.jpg');
+        background-size: cover;
+    }
+
+    marquee{
+        background-color: rgb(113, 168, 77);
+        height: 50px;
+        font-size: larger;
+    }
+
+    
+    aside{
+        display: block;
+        padding:10px;
+        font-size: large;
+        color: white;
+        text-align: center;
+        height: 80px;
+        width: 50px;
+        
+    }
+a{
+    width: 200px;
+    height: 150px;
+    background-color:blanchedalmond;
+    display:block;
+    text-decoration: none;
+}
+a:hover{
+   background-color:whitesmoke;
+    border-radius: 50px;
+
+}
+    </style>
+    </head>
+    <body>
+        <marquee> <b>AZHAR'S CITIZEN GYM, NANDED - 431604  </b></marquee>
+        <aside>
+        
+        <a href="webform.html"><b>Registration</b></a>
+        <a href="citizenhome.html"><b>Home</b></a>
+        <a href="aboutuscitizen.html"><b>About us</b></a>
+        <a href="citizencontactus.html"><b>contact us</b></a>
+        
+    </aside>
+
+</body>
+<script>
+    aside();
+</script>
+</html>

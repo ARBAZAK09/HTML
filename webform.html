@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+   bid{
+    font-size:large;
+    font-weight:bold;
+    padding-left:500px;
+    text-align: center;
+   }
+   form{
+       text-align: center;
+
+   }
+
+</style>
+<script>
+    function setStorevalues(){
+            
+      
+        sessionStorage.setItem("Name",document.getElementById("name").value);
+        sessionStorage.setItem("Password",document.getElementById("pass").value);
+        sessionStorage.setItem("confirmpass",document.getElementById("confirmpass").value);
+ 
+        sessionStorage.setItem("colorpicker",document.getElementById("favcolor").value);
+        sessionStorage.setItem("Blood group",document.getElementById("blood group").value);
+        sessionStorage.setItem("Age",document.getElementById("age").value);
+        
+        
+    }
+    
+    function getStorevalues(){
+       
+  
+      document.getElementById("name").value = sessionStorage.getItem("Name");
+      document.getElementById("pass").value = sessionStorage.getItem("Password");
+      document.getElementById("confirmpass").value=sessionStorage.getItem("confirmpass");
+     
+      document.getElementById("favcolor").value = sessionStorage.getItem("colorpicker");
+      document.getElementById("blood group").value = sessionStorage.getItem("Blood group");
+      document.getElementById("age").value = sessionStorage.getItem("Age");
+      
+      
+   
+   
+   
+    document.getElementById('bid').style=`background-color: ${sessionStorage.getItem("colorpicker")}`;
+
+
+
+  }
+    
+</script>
+</head>
+<body id="bid">
+    <form>
+    <h1><span style="color:blue">FORM</span></h1>
+    
+    <br>
+   Name: <input type="text" placeholder="Enter name" id="name">
+    <br>
+    <br>
+  Password:  <input type="password" placeholder="Enter password" id="pass">
+    <br>
+    <br>
+    Confirm password: <input type="password" id="confirmpass"> 
+    <br>
+    <br>
+    gender : <input type="radio" name="gender">male
+    <input type="radio" name="gender">female
+    <br>
+    <br>
+    <br>
+    Blood Group : <input type="text" placeholder="Enter your blood Group" id="blood group">
+    <br>
+    <br>
+    <br>
+   Age :   <input type="number" id="age">
+   <br>
+   Date :  <input type="date" id="Date">
+    <br>
+    favcolor:  <input type="color" id="favcolor">
+    <br>
+    <br>
+
+    <button onclick="setStorevalues()">submit</button>
+
+    <button>cancel</button>
+    
+
+
+ </form>  
+</body>
+<script>
+    getStorevalues();
+</script>
+</html>
